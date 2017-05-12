@@ -1,7 +1,7 @@
 import numpy as np
 from os import path, system
 
-print 'Compiling Fortran extension.'
+print('Compiling Fortran extension.')
 system(path.expanduser('f2py -c -m fits fitsmodule.f90'))
 from fits import multiply
 

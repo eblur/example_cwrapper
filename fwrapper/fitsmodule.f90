@@ -1,9 +1,9 @@
 SUBROUTINE multiply(x, const, results)
 
 IMPLICIT NONE
-REAL, INTENT(IN) :: x
+REAL, DIMENSION(3), INTENT(IN) :: x
 REAL, INTENT(IN) :: const
-REAL, DIMENSION(nx), INTENT(OUT) :: results
+REAL, DIMENSION(3), INTENT(OUT) :: results
 INTEGER :: i, nx
 
 nx = SIZE(x)
